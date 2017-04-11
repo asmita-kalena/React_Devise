@@ -1,0 +1,26 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: React_Devise
+  pool: 5
+  username: c240
+  password: password
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: React_Devise
+  pool: 5
+  username: c240
+  password: password
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: React_Devise
+  pool: 5
+  username: c240
+  password: password
