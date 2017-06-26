@@ -6,12 +6,14 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  ruby 2.3.1p112
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+  Use postgresql as the database for Active Record
 
 * Database initialization
 
@@ -22,3 +24,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# React_Devise
+React_Devise
