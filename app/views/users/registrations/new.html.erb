@@ -1,29 +1,48 @@
-<h2>Sign up</h2>
+<%# @user.errors.as_json %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+
+<%= react_component('RegistrationApp', props: {
+                                          data: {
+                                            authenticity_token: form_authenticity_token,
+                                            translation: {
+                                              register: 'labels.register',
+                                              email_address: 'labels.email_address',
+                                              password: 'labels.password',
+                                              confirm_password: 'labels.confirm_password',
+                                              submit: 'labels.submit',
+                                              }
+                                            }
+                                          }) %>
+
+
+
+
+<!-- <h2>Sign up</h2>
+
+<%#= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%#= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%#= f.label :email %><br />
+    <%#= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%#= f.label :password %>
+    <%# if @minimum_password_length %>
+    <em>(<%#= @minimum_password_length %> characters minimum)</em>
+    <%# end %><br />
+    <%#= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%#= f.label :password_confirmation %><br />
+    <%#= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%#= f.submit "Sign up" %>
   </div>
-<% end %>
+<%# end %>
 
-<%= render "users/shared/links" %>
+<%#= render "devise/shared/links" %> -->
