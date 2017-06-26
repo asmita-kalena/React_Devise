@@ -65,7 +65,8 @@ export default class RegisterContainer extends React.Component {
             },
             errors: {}
           });
-          window.location="http://localhost:3000";
+          // window.location="http://localhost:3000";
+          window.location="https://react-devise.herokuapp.com";
         },
         error: (data) => {
           this.setState({errors: data.responseJSON.errors})
