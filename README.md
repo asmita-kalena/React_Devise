@@ -11,7 +11,9 @@ application up and running.
 4. In browser : localhost:3000
 
 
+#Purpose:
 The purpose of this project is to demonstrate how to incorporate 'React.js' and 'devise gem' into a Rails application. Checkout the demo:
+
 https://react-devise.herokuapp.com
 
 
